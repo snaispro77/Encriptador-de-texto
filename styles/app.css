@@ -1,0 +1,145 @@
+:root{
+    --morado: #9c27b0;
+    --moradooscuro: #89119d;
+    --amarillooscuro: #ffce00;
+    --amarillo: rgb(233,287,2);
+    --celeste: #009FBD;
+    --naranja: #EA5455;
+    --fuenteprincipal: 'Staatliches', cursive;
+    --fuenteopen: 'Open Sans', sans-serif;
+    --fuenteroboto: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+h1 , h2 ,h3{
+    font-family: 'Playfair Display', serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+textarea::placeholder{
+    font-size: 2rem;
+}
+/*Utilidades*/
+
+.contenedor{
+    width: 120rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.seccion{
+    padding-block: 5rem;
+}
+
+/**/
+
+.header{
+    user-select: none;
+    margin-block: 10rem 5rem;
+}
+.header__titulo{
+    font-size: 4rem;
+    font-family: var(--fuenteroboto);
+    text-align: left;
+    border-radius: 1rem;
+    background-color: #73508b;
+    width: fit-content;
+    padding: 1rem 2rem;
+    color: whitesmoke;
+}
+
+.header__flex{
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    align-items: center;
+}
+.header__conector{
+    font-size: 10rem;
+    margin: 0;
+    color: rgba(105, 39, 85, 0.99);
+    font-family: sans-serif;
+}
+.header__img{
+    width: 10rem;
+}
+
+/*Main*/
+.contenido-principal{
+    margin-block: 3rem;
+}
+.contenido-principal__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+}
+.mensaje, .mensaje-final{
+    height: 30rem;
+    background-color: #f0eae3;
+}
+.mensaje{
+    border: solid 3px #4C4C6D;
+}
+.mensaje textarea{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 2rem;
+    outline: none;
+    background-color: #f0eae3;
+}
+.mensaje-final{
+    border: solid 3px #4C4C6D;
+    padding: 1rem;
+    font-size: 2rem;
+    user-select: none;
+}
+
+/**/
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: repeat(3,30rem);
+    column-gap: 2rem;
+    justify-content: center;
+}
+.footer__boton{
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    background-color: #537188;
+    color: whitesmoke;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+.footer__boton:hover{
+    background-color: #5c95c1;
+}

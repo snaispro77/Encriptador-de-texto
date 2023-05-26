@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeteria</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preload" href="styles/app.css" as="style">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+      <header class="header contenedor">
+            <div class="header__flex">
+                  <h1 class="header__titulo">Encriptador de Texto |<span> By Snais :"3</span></h1>
+                  <img class="header__img" src="styles/js.png" alt="js">
+            </div>
+      </header>
+      
+      <main class="contenido-principal contenedor">
+            <div class="contenido-principal__grid">
+                  <div class="mensaje">
+                        <textarea id="texto" placeholder="Introduce tu mensaje"></textarea>
+                  </div>
+                  <div class="mensaje-final">
+                  
+                  </div>
+            </div>
+      </main>
+      <footer class="footer contenedor">
+            <div class="footer__grid">
+                  <input class="footer__boton encriptar" type="button" value="Encriptar">
+                  <input class="footer__boton desencriptar" type="button" value="Desencriptar">
+                  <input class="footer__boton copiar" type="button" value="Copiar Texto">
+            </div>
+      </footer>
+</body>
+<script src="script.js"></script>
+</html>
